@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commonn_margin_pad_x"
+            android:layout_marginRight="@dimen/commonn_margin_pad_x"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/top_color"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/nav_pick_up_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvNavPickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/commonn_margin_pad"
+                    android:layout_marginLeft="@dimen/commonn_margin_pad"
+                    android:layout_marginTop="@dimen/commonn_margin_pad"
+                    android:drawableTop="@drawable/map_marker"
+                    android:gravity="center"
+                    android:text="@string/nav"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10sp" />
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/commonn_margin_pad"
+                    android:layout_marginLeft="@dimen/commonn_margin_pad"
+                    android:layout_marginTop="@dimen/commonn_margin_pad"
+                    android:background="@color/gray_btn_bg_color" />
+
+</LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_toRightOf="@+id/nav_pick_up_container"
+                     android:layout_toLeftOf="@+id/nav_pick_up_complete"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvPickUpTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/pickuplocation"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/commonn_tv_x" />
+
+
+                    <TextView
+                        android:id="@+id/tvPickUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/away_timer_done"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/commonn_tv_xx" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/nav_pick_up_complete"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/iv_tick"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/commonn_margin_pad"
+                    android:layout_marginRight="@dimen/commonn_margin_pad"
+                    android:layout_marginTop="@dimen/commonn_margin_pad"
+                    android:background="@color/gray_btn_bg_color" />
+    <ImageView
+        android:id="@+id/iv_tick"
+        android:layout_width="wrap_content"
+       android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:layout_marginRight="@dimen/commonn_margin_pad"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/tick_circle"
+        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/way_point_container"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"></LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/commonn_margin_pad"
+
+                android:background="@color/top_color"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/nav_drop_off_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvNavDropOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/commonn_margin_pad"
+                        android:layout_marginLeft="@dimen/commonn_margin_pad"
+                        android:layout_marginTop="@dimen/commonn_margin_pad"
+                        android:drawableTop="@drawable/map_marker"
+                        android:gravity="center"
+                        android:text="@string/nav"
+                        android:visibility="invisible"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp" />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/commonn_margin_pad"
+                        android:layout_marginLeft="@dimen/commonn_margin_pad"
+                        android:layout_marginTop="@dimen/commonn_margin_pad"
+                        android:background="@color/gray_btn_bg_color" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/nav_drop_off_container_select"
+                    android:layout_toRightOf="@+id/nav_drop_off_container"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+           android:id="@+id/tvDropOffTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/dropofflocation"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/commonn_tv_x" />
+
+
+                    <TextView
+                        android:id="@+id/tvDropOff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/away_timer_done"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/commonn_tv_xx" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/nav_drop_off_container_select"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/iv_tick1"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/commonn_margin_pad"
+                        android:layout_marginRight="@dimen/commonn_margin_pad"
+                        android:layout_marginTop="@dimen/commonn_margin_pad"
+                        android:background="@color/gray_btn_bg_color" />
+                    <ImageView
+                        android:id="@+id/iv_tick1"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/commonn_margin_pad"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/tick_circle"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/return_journey_container"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/commonn_margin_pad"
+                android:background="@color/top_color"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/nav_pick_up_container1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvNavPickup1"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/commonn_margin_pad"
+                        android:layout_marginLeft="@dimen/commonn_margin_pad"
+                        android:layout_marginTop="@dimen/commonn_margin_pad"
+                        android:drawableTop="@drawable/map_marker"
+                        android:gravity="center"
+                        android:text="@string/nav"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp" />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/commonn_margin_pad"
+                        android:layout_marginLeft="@dimen/commonn_margin_pad"
+                        android:layout_marginTop="@dimen/commonn_margin_pad"
+                        android:background="@color/gray_btn_bg_color" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/nav_pick_up_container1"
+                    android:layout_toLeftOf="@+id/nav_pick_up_complete1"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvPickUpTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/pickuplocation"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/commonn_tv_x" />
+
+
+                    <TextView
+                        android:id="@+id/tvPickUp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/away_timer_done"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/commonn_tv_xx" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/nav_pick_up_complete1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/iv_tick"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/commonn_margin_pad"
+                        android:layout_marginRight="@dimen/commonn_margin_pad"
+                        android:layout_marginTop="@dimen/commonn_margin_pad"
+                        android:background="@color/gray_btn_bg_color" />
+                    <ImageView
+                        android:id="@+id/iv_tick11"
+
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible"
+                        android:layout_marginRight="@dimen/commonn_margin_pad"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/tick_circle"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+
+                android:paddingLeft="@dimen/commonn_margin_pad"
+                android:paddingRight="@dimen/commonn_margin_pad">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Number of passenger" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBarNumberOfPerson"
+                            style="@style/foodRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/commonn_margin_pad"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:isIndicator="true"
+                            android:numStars="10"
+                            android:stepSize="1" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvFaretitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fare estimate" />
+
+                        <TextView
+                            android:id="@+id/tvFair"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/commonn_margin_pad"
+                            android:text="12 $"
+                            android:textSize="@dimen/commonn_tv_xxx" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Number of Bags" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBarbag"
+                            style="@style/foodRatingBarbag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/commonn_margin_pad"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:isIndicator="true"
+                            android:numStars="4"
+                            android:stepSize="1" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time" />
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/commonn_margin_pad"
+                            android:text="12 $"
+
+                            android:textSize="@dimen/commonn_tv_xxx" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Client name"
+
+                            android:textSize="@dimen/commonn_tv_x" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Arslan"
+
+                            android:textSize="@dimen/commonn_tv_xx" />
+
+                    </LinearLayout>
+                     <LinearLayout
+                         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+                         android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Phone No"
+
+                            android:textSize="@dimen/commonn_tv_x" />
+
+                        <TextView
+                            android:id="@+id/tvPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+
+                            android:textSize="@dimen/commonn_tv_xx" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvDispatechedid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Created by dispatch"
+
+                    android:textSize="@dimen/commonn_tv_xx" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>

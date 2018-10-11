@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+
+    android:orientation="vertical">
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:background="#F5F5F5"
+        card_view:cardCornerRadius="7dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/commonn_margin_pad_xx"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_above="@+id/cotainer"
+                android:src="@drawable/line"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:id="@+id/cotainer"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/commonn_margin_pad_xxxxxx"
+
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+
+                    android:layout_marginTop="@dimen/commonn_margin_pad_x"
+                    android:gravity="center"
+                    android:text="Congratulation\nJob Finished"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/commonn_tv_xxxxxx"
+                    />
+
+
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_marginTop="@dimen/commonn_margin_pad_x"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/gray_btn_bg_color"
+                    android:layout_height="2px"/>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnConfirm"
+
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorBtnDefault"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="QUEUED JOB"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/commonn_tv_xx"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>

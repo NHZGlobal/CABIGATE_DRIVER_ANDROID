@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/mobileapps/technroid/io/cabigate/api/LocationService.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/mobileapps/technroid/io/cabigate/gpstrackmodule/GpsTrackerAlarmReceiver.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/mobileapps/technroid/io/cabigate/gpstrackmodule/GpsTrackerBootReceiver.java" charset="windows-1252" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

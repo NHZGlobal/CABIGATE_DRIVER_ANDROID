@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/splash_bg"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_activate_dispatch"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/commonn_margin_pad_xx"
+        android:layout_marginRight="@dimen/commonn_margin_pad_xx"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/btn_gray"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/commonn_tv_xxxx"
+            android:paddingLeft="@dimen/commonn_margin_pad_x"
+            android:drawableLeft="@drawable/bell_ic"
+            android:layout_marginRight="3dp"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:text="Activate Dispatch"
+            android:layout_height="45dp" />
+        <TextView
+            android:layout_marginTop="@dimen/commonn_margin_pad"
+            android:gravity="center"
+            android:text="Create new Job or Find Unassigned job"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/commonn_tv_x"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/rv"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottomContainer"
+        android:layout_height="match_parent">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnCreateJob"
+            android:background="@drawable/btn_gray"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/commonn_margin_pad_x"
+            android:drawableLeft="@drawable/add_ic"
+            android:layout_marginRight="3dp"
+            android:textColor="@android:color/white"
+            android:text="Create Job"
+            android:layout_height="45dp" />
+        <Button
+            android:id="@+id/btnShowUnassigned"
+            android:layout_width="0dp"
+            android:drawableLeft="@drawable/eye_ic"
+            android:background="@drawable/btn_gray"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="3dp"
+            android:text="Show unassigned"
+            android:layout_height="45dp" /></LinearLayout>
+
+
+
+
+</RelativeLayout>

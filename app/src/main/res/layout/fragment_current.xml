@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/screen_bg"
+
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/jobContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:visibility="gone"
+        android:id="@+id/topPanel"
+        layout="@layout/current_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        ></include>
+
+
+    <include
+        android:layout_marginTop="@dimen/commonn_margin_pad_x"
+        android:layout_below="@+id/topPanel"
+        android:visibility="gone"
+        android:id="@+id/ll_container_job1"
+       android:layout_gravity="bottom"
+        layout="@layout/current_assign_job_new"
+        android:layout_above="@+id/bottomContainer"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+
+        ></include>
+
+    <include
+        android:layout_marginTop="4dp"
+      android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        layout="@layout/assign_jobbottom_button"
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        ></include>
+
+
+
+    <TextView
+        android:id="@+id/tvEmptyText"
+        android:text="Please shift in to start receiving jobs"
+        android:visibility="gone"
+        android:textSize="@dimen/commonn_tv_xxxxx"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+
+
+    <include
+        android:layout_marginTop="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        layout="@layout/available_layout"
+        android:id="@+id/avilableContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        ></include>
+
+
+
+
+
+
+
+
+</RelativeLayout>

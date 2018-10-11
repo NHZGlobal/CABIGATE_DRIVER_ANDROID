@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/top_color"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/commonn_margin_pad_xx"
+            android:paddingTop="@dimen/commonn_margin_pad_xx"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Away timer done"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/commonn_tv_xx" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/commonn_margin_pad_x"
+        android:layout_width="wrap_content"
+        android:text="Away timer is done\n Do you want to change status to avilable?"
+
+        android:textSize="@dimen/commonn_tv_xxxx"
+        android:drawablePadding="@dimen/commonn_margin_pad_x"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:text="Job Finished"
+        android:drawablePadding="@dimen/commonn_margin_pad_x"
+        android:visibility="invisible"
+
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commonn_margin_pad"
+        android:background="@color/top_color"
+        android:orientation="horizontal"
+
+
+        android:weightSum="1">
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gray"
+                android:text="Still Away"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/tvTimer"
+                android:text="30s"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/time_mid"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gray"
+                android:text="Available Now"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#333333</color>
+
+
+    <color name="colorAccent">#06f3fc</color>
+<!--    <color name="colorBtnDefault">#06f3fc</color>
+    <color name="colorBtnDefaultPressed">#05cbd2</color> -->
+
+   <color name="colorBtnDefault">#333333</color>
+    <color name="colorBtnDefaultPressed">#000000</color>
+
+    <color name="colorBtnDefault2">#10a412</color>
+    <color name="colorBtnDefaultPressed2">#0a610b</color>
+<!--
+    <color name="colorBtnDefault">#f27474</color>
+    <color name="colorBtnDefaultPressed">#d75959</color>-->
+
+    <color name="colorBtnDefault1">#cc696d</color>
+    <color name="colorBtnDefaultPressed1">#d75959</color>
+    <color name="menutxt">#828180</color>
+    <color name="colorAccentProgress">#ffffff</color>
+    <color name="textcolor_hint">#efeded</color>
+    <color name="top_color">#333333</color>
+    <color name="top_color_below">#252424</color>
+    <color name="top_color_below_secandory">#6b717d</color>
+    <color name="white">#ffffff</color>
+
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#dcdcdc</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="redtext">#e97b58</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#F27474</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+
+    <color name="grey_btn_bg_color">#555555</color>
+    <color name="grey_btn_bg_pressed_color">#444444</color>
+    <color name="golden_btn_bg_color">#f9c02a</color>
+    <color name="golden_btn_bg_pressed_color">#e2ae27</color>
+
+</resources>

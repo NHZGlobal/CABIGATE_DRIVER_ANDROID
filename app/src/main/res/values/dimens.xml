@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="alert_width">260dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+
+    <dimen name="commonn_margin_pad_s">2.5dp</dimen>
+    <dimen name="commonn_margin_pad">5dp</dimen>
+    <dimen name="commonn_margin_pad_x">10dp</dimen>
+    <dimen name="commonn_margin_pad_xx">15dp</dimen>
+    <dimen name="commonn_margin_pad_xxx">20dp</dimen>
+    <dimen name="commonn_margin_pad_xxxx">25dp</dimen>
+    <dimen name="commonn_margin_pad_xxxxx">30dp</dimen>
+    <dimen name="commonn_margin_pad_xxxxxx">35dp</dimen>
+    <dimen name="commonn_margin_pad_xxxxxxx">40dp</dimen>
+    <dimen name="commonn_margin_pad_s_x">50dp</dimen>
+    <dimen name="commonn_margin_pad_m_x">55dp</dimen>
+    <dimen name="commonn_margin_pad_l_x">65dp</dimen>
+    <dimen name="commonn_margin_pad_xl_x">75dp</dimen>
+    <dimen name="commonn_margin_pad_xxl_x">100dp</dimen>
+    <dimen name="commonn_margin_pad_xxxl_x">160dp</dimen>
+    <dimen name="commonn_tv">10dp</dimen>
+    <dimen name="commonn_tv_x">12dp</dimen>
+    <dimen name="commonn_tv_xx">14dp</dimen>
+    <dimen name="commonn_tv_xxx">16dp</dimen>
+    <dimen name="commonn_tv_xxxx">18dp</dimen>
+    <dimen name="commonn_tv_xxxxx">20dp</dimen>
+    <dimen name="commonn_tv_xxxxxx">22dp</dimen>
+    <dimen name="commonn_tv_xxxxxxx">24dp</dimen>
+    <dimen name="commonn_drawable_pading">3dp</dimen>
+
+    <dimen name="list_item_hight">180dp</dimen>
+    <dimen name="manully_width">200dp</dimen>
+    <dimen name="manully_hight">500dp</dimen>
+
+    <dimen name="pop_hight_width">300dp</dimen>
+
+
+
+</resources>

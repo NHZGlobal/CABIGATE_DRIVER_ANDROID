@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainContainer"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/commonn_margin_pad_s_x"
+        android:src="@drawable/cabigate_logo"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/dashboard_driver_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/commonn_margin_pad_xxxxxxx"
+        android:layout_marginRight="@dimen/commonn_margin_pad_xxxxxxx"
+        android:layout_marginTop="@dimen/commonn_margin_pad"></include>
+
+    <include
+        layout="@layout/dashboard_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/commonn_margin_pad_xx"
+        android:layout_alignParentBottom="true"
+></include>
+
+</RelativeLayout>

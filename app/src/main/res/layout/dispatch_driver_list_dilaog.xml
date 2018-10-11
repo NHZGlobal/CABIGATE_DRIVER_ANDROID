@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/gray_btn_bg_color"
+        android:layout_below="@+id/timeContainer"
+        android:layout_above="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+       android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/topTitleContainer"
+            android:background="@color/top_color_below"
+            android:layout_width="match_parent"
+
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/selectdriver"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/commonn_tv_xxxx"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_below="@+id/topTitleContainer"
+            android:layout_above="@+id/selctedContainer"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/row_driver"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/selctedContainer"
+            android:weightSum="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/top_color_below"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <TextView
+                android:id="@+id/tvCancel"
+                android:layout_width="0dp"
+                android:text="Cancel"
+                android:drawablePadding="@dimen/commonn_margin_pad_x"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/commonn_tv_xxxx"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

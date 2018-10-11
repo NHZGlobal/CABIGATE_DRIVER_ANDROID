@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:id="@+id/jobContainer"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <Button
+        android:id="@+id/btnJObShift"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:text="Start Shift"
+        android:layout_marginRight="@dimen/commonn_margin_pad"
+        android:singleLine="true"
+            android:paddingLeft="@dimen/commonn_margin_pad"
+            android:drawableLeft="@drawable/end_shift_ic"
+        android:background="@drawable/btn_job_shift"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textSize="@dimen/commonn_tv_xxx"
+        android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/btnJObView"
+            android:text="Job View"
+            android:paddingLeft="@dimen/commonn_margin_pad"
+            android:drawableLeft="@drawable/job_view_ic"
+            android:layout_marginLeft="@dimen/commonn_margin_pad"
+            android:singleLine="true"
+            android:background="@drawable/btn_job_shift"
+            android:textColor="@color/common_google_signin_btn_text_light"
+            android:textSize="@dimen/commonn_tv_xxx"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+<ImageButton
+    android:id="@+id/btnLogOut"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:scaleType="fitXY"
+    android:layout_marginTop="@dimen/commonn_margin_pad_x"
+    android:layout_below="@+id/jobContainer"
+    android:src="@drawable/btn_log_out"
+    />
+
+
+
+
+</LinearLayout>

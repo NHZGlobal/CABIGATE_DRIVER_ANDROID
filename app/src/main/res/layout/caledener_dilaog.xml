@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.imanoweb.calendarview.CustomCalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_btn_bg_color"
+        app:calendarBackgroundColor="@color/gray_btn_bg_color"
+        app:calendarTitleTextColor="@color/colorAccent"
+        app:currentDayOfMonthColor="@color/colorAccent"
+        app:dayOfMonthTextColor="@color/top_color"
+        app:dayOfWeekTextColor="@color/top_color"
+        app:disabledDayBackgroundColor="@color/gray_btn_bg_color"
+        app:disabledDayTextColor="@color/gray_btn_bg_color"
+        app:selectedDayBackgroundColor="@color/colorAccent"
+        app:titleLayoutBackgroundColor="@color/top_color"
+        app:weekLayoutBackgroundColor="@color/colorAccent">
+    </com.imanoweb.calendarview.CustomCalendarView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Spinner
+
+
+            android:id="@+id/spTime"
+           android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/small_textfield"
+            android:layout_width="0dp"
+            android:layout_height="40dp"></Spinner>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="@dimen/commonn_margin_pad"
+            android:background="@drawable/ok_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

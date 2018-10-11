@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:paddingTop="@dimen/commonn_margin_pad_s"
+    android:paddingBottom="@dimen/commonn_margin_pad_s"
+    android:paddingLeft="@dimen/commonn_margin_pad"
+    android:paddingRight="@dimen/commonn_margin_pad"
+    android:layout_height="match_parent">
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/commonn_margin_pad_x"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/tvCarName"
+        android:layout_toRightOf="@id/ivCarStatus"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="@dimen/commonn_margin_pad_x"
+        android:drawableLeft="@drawable/z_location_ic"
+        android:layout_marginLeft="@dimen/commonn_margin_pad_x"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/commonn_tv_xxxx"
+        android:text="Vichile name"
+        android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tvCarNumber"
+
+            android:layout_toRightOf="@id/ivCarStatus"
+            android:layout_width="30dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:background="@drawable/number_bg"
+            android:textColor="@color/white"
+            android:padding="@dimen/commonn_margin_pad"
+           android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/commonn_margin_pad"
+            android:textSize="@dimen/commonn_tv_xx"
+            android:text="22"
+            android:layout_height="35dp" />
+
+
+
+
+</RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/commonn_margin_pad"
+        android:layout_marginRight="@dimen/commonn_margin_pad"
+        android:background="@color/gray_btn_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    </LinearLayout>

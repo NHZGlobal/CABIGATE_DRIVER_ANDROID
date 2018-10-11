@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/commonn_margin_pad"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="70dp"
+            android:text="Hrs"
+            android:textSize="@dimen/commonn_tv_xxx"
+            android:textColor="@color/menutxt"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="70dp"
+            android:text="Min"
+            android:textSize="@dimen/commonn_tv_xxx"
+            android:textColor="@color/menutxt"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <mobileapps.technroid.io.cabigate.helper.WheelView
+            android:id="@+id/wheel_hours"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            />
+
+
+        <mobileapps.technroid.io.cabigate.helper.WheelView
+            android:id="@+id/wheel_minute"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="160dp" android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_job_shift"
+        android:text="Save"
+
+        />
+
+</LinearLayout>

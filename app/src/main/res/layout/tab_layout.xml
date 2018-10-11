@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:anytextview="http://schemas.android.com/apk/res-auto"
+
+    android:paddingTop="1dp"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <Button
+            android:textSize="@dimen/commonn_tv"
+            android:drawablePadding="@dimen/commonn_margin_pad"
+            android:text="@string/current"
+            android:textColor="@color/menutxt"
+            android:paddingTop="@dimen/commonn_margin_pad"
+            android:paddingRight="@dimen/commonn_margin_pad"
+            android:paddingLeft="@dimen/commonn_margin_pad"
+
+            android:background="@drawable/nav_unselected_tab"
+            android:id="@+id/btmBtnCurrent"
+            android:drawableTop="@drawable/current_nav_sel"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+
+            />
+
+
+
+        <Button
+            android:textSize="@dimen/commonn_tv"
+            android:drawablePadding="@dimen/commonn_margin_pad"
+            android:text="@string/queue"
+            android:textColor="@color/menutxt"
+            android:paddingTop="@dimen/commonn_margin_pad"
+            android:paddingRight="@dimen/commonn_margin_pad"
+            android:paddingLeft="@dimen/commonn_margin_pad"
+
+            android:drawableTop="@drawable/queue_nav_unsel"
+            android:background="@drawable/nav_unselected_tab"
+
+            android:id="@+id/btmBtnQueue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+
+            />
+
+
+
+
+     <RelativeLayout
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content">
+
+         <Button
+             android:visibility="visible"
+             android:textSize="@dimen/commonn_tv"
+             android:drawablePadding="@dimen/commonn_margin_pad"
+             android:text="@string/offers"
+             android:textColor="@color/menutxt"
+             android:drawableTop="@drawable/offers_nav_unsel"
+             android:id="@+id/btmBtnOffer"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+
+             android:background="@drawable/nav_unselected_tab"
+             android:paddingTop="@dimen/commonn_margin_pad"
+             android:paddingRight="@dimen/commonn_margin_pad"
+
+             android:paddingLeft="@dimen/commonn_margin_pad"
+             />
+
+
+
+
+         <TextView
+             android:id="@+id/ivBadge"
+             android:layout_margin="2dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+
+     </RelativeLayout>
+
+
+
+        <Button
+            android:visibility="gone"
+            android:textSize="@dimen/commonn_tv"
+            android:drawablePadding="@dimen/commonn_margin_pad"
+            android:text="@string/map"
+            android:textColor="@color/menutxt"
+            android:paddingTop="@dimen/commonn_margin_pad"
+            android:paddingRight="@dimen/commonn_margin_pad"
+
+            android:background="@drawable/nav_unselected_tab"
+
+            android:drawableTop="@drawable/map_nav_unsel"
+            android:paddingLeft="@dimen/commonn_margin_pad"
+
+            android:id="@+id/btmBtnMap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            />
+
+
+        <Button
+            android:textSize="9dp"
+            android:drawablePadding="@dimen/commonn_margin_pad"
+            android:text="@string/dispatch"
+            android:textColor="@color/menutxt"
+            android:paddingTop="@dimen/commonn_margin_pad"
+            android:paddingRight="@dimen/commonn_margin_pad"
+            android:paddingLeft="@dimen/commonn_margin_pad"
+
+            android:id="@+id/btmBtnDispatch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/nav_unselected_tab"
+
+            android:drawableTop="@drawable/dispatch_nav_unsel"
+
+            />
+        <Button
+            android:textSize="@dimen/commonn_tv"
+            android:drawablePadding="@dimen/commonn_margin_pad"
+            android:text="@string/chat"
+            android:textColor="@color/menutxt"
+            android:paddingTop="@dimen/commonn_margin_pad"
+            android:paddingRight="@dimen/commonn_margin_pad"
+            android:paddingLeft="@dimen/commonn_margin_pad"
+
+            android:id="@+id/btmBtnMessaging"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/nav_unselected_tab"
+
+            android:drawableTop="@drawable/chat_nav_unsel"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

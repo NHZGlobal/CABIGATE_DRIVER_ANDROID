@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">CABIGATE</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="error_field">"Field is missing</string>
+    <string name="error_password">"Your password must have at least 8 characters, consists of only letters and digits and must contain atleast two digits</string>
+    <string name="error_email">Your email is either missing or is invalid</string>
+    <string name="warning_oops">Oops...</string>
+    <string name="error_name">Your name is missing</string>
+    <string name="error_username">Please input valid email</string>
+    <string name="error_pass">Please input valid password</string>
+    <string name="error_social">Unable to retrieve user details</string>
+    <string name="error_terms">Please accept the terms and conditions</string>
+
+    <string name="error_no_locs">No location found</string>
+
+    <string name="confirm_reset_pass">Your password will reset and will be sent to your email.</string>
+    <string name="confirm_profile">Are you sure you want to make the changes to your profile?</string>
+    <string name="confirm_logout">Are you sure you want to logout?</string>
+
+    <string name="something_went_wrong">Something went wrong. Please try again later</string>
+    <string name="error_server_down">It seems that server is down. Please try again later</string>
+    <string name="error_location">Your location is not found. Please make sure your Location/GPS is turned on and then try again.</string>
+    <string name="error_relog">"Your account seems to be invalid. Please relog"</string>
+
+    <string name="changes_confirmed">Your changes have been saved successfully</string>
+    <string name="error_already_voted">You have already added your mood</string>
+
+
+    <!-- LOGIN SCREENS -->
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="fullname">Full Name</string>
+    <string name="username_email">Username</string>
+    <string name="username">Username</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="company">Company</string>
+    <string name="share_text">Do you want us to share all your moods publicly?</string>
+    <string name="signup_terms"><u>I have read and agree to the terms and conditions</u></string>
+    <string name="forgot_password">Forgot your Password? Click here</string>
+    <string name="existing_login">Or login to an existing account</string>
+
+    <string name="old_pass">Old Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="assign">Assign Driver</string>
+    <string name="delivered">Delivered</string>
+    <string name="cancel_job">Cancel JOb</string>
+
+    <string name="selectyourvehicle">Select your Vehicle</string>
+    <string name="selectyourzone">Select your Zone</string>
+    <string name="selectdriver">Select Driver</string>
+    <string name="selected">Selected</string>
+    <string name="still_away">Still Away</string>
+    <string name="available_now">Available now</string>
+
+    <string name="callout">Call out</string>
+    <string name="wait">Wait</string>
+    <string name="pob">Pob</string>
+
+    <!-- MAIN SCREENS -->
+    <string name="menu">Menu</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="history">History</string>
+    <string name="stats">Stats</string>
+    <string name="settings">Settings</string>
+    <string name="about">About MooDIt</string>
+    <string name="share_mood">Share Mood</string>
+    <string name="logout">Logout</string>
+    <string name="nav">Nav</string>
+    <string name="finish">Finish</string>
+
+    <string name="new_order">New Order waiting</string>
+
+    <string name="start">Start Ride</string>
+    <string name="end">End Ride</string>
+    <string name="current">Current</string>
+    <string name="queue">Queue</string>
+    <string name="offers">Offers</string>
+    <string name="dispatch">Dispatch</string>
+    <string name="map">Map</string>
+    <string name="chat">Chat</string>
+    <string name="message">Message</string>
+
+    <string name="availability">Availability</string>
+
+    <string name="estimated_durration">Estimated durration</string>
+    <string name="away_timer_done">Away timer done</string>
+    <string name="pickuplocation">Pick up location</string>
+    <string name="dropofflocation">Drop off location</string>
+    <string name="incomingjob">Incoming job</string>
+    <string name="Status">Status:</string>
+    <string name="Pickup">Pickup:</string>
+    <string name="fair_payment">Fare Payment</string>
+    <string name="for_job">For Job</string>
+    <string name="taxi_meter">Taxi Meter</string>
+    <string name="time">Time</string>
+    <string name="distance">Distance</string>
+    <string name="client">Client</string>
+    <string name="next">Next</string>
+    <string name="adjust">Adjust</string>
+    <string name="Back">Back</string>
+    <string name="away_timer_done_away">Away timer is done!\ndo you want to change Status to available </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string name="error_network">No connection</string>
+    <string name="error_network_subtitle">It seems you have no network connection.</string>
+    <string name="error_server">Server Exception</string>
+    <string name="error_server_subtitle">The server returned an exception.</string>
+    <string name="error_uncommon">WTF?!</string>
+    <string name="error_uncommon_subtitle">There was an exception which should not happen!</string>
+</resources>

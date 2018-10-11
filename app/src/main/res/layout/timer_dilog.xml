@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:background="@color/top_color"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/commonn_margin_pad_xxx"
+            android:text="@string/estimated_durration"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/commonn_tv_xxxxxx"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ll_ten_minute"
+        android:layout_marginTop="@dimen/commonn_margin_pad"
+        android:layout_marginLeft="@dimen/commonn_margin_pad"
+        android:layout_marginRight="@dimen/commonn_margin_pad"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:background="@drawable/time_circle_unsel"
+            android:layout_width="wrap_content"
+            android:text="10"
+            android:textSize="@dimen/commonn_tv_xxxx"
+            android:textColor="@color/top_color"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+           android:layout_marginLeft="@dimen/commonn_margin_pad_x"
+            android:layout_width="wrap_content"
+            android:text="minutes"
+            
+            android:textSize="@dimen/commonn_tv_xxxxxxx"
+            android:textColor="@color/top_color"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3px"
+        android:layout_marginTop="@dimen/commonn_margin_pad_x"
+        android:background="@color/gray_btn_bg_color"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/commonn_margin_pad"
+        android:layout_marginRight="@dimen/commonn_margin_pad"
+
+        android:id="@+id/ll_fifteen_min"
+        android:layout_marginTop="@dimen/commonn_margin_pad"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/time_circle_unsel"
+            android:layout_width="wrap_content"
+            android:text="15"
+            android:textSize="@dimen/commonn_tv_xxxx"
+            android:textColor="@color/top_color"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/commonn_margin_pad_x"
+            android:layout_width="wrap_content"
+            android:text="minutes"
+
+            android:textSize="@dimen/commonn_tv_xxxxxxx"
+            android:textColor="@color/top_color"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3px"
+        android:layout_marginTop="@dimen/commonn_margin_pad_x"
+        android:background="@color/gray_btn_bg_color"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+android:id="@+id/ll_thirty_min"
+        android:layout_marginLeft="@dimen/commonn_margin_pad"
+        android:layout_marginRight="@dimen/commonn_margin_pad"
+        android:layout_marginTop="@dimen/commonn_margin_pad"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/time_circle_unsel"
+            android:layout_width="wrap_content"
+            android:text="30"
+            android:textSize="@dimen/commonn_tv_xxxx"
+            android:textColor="@color/top_color"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/commonn_margin_pad_x"
+            android:layout_width="wrap_content"
+            android:text="minutes"
+
+            android:textSize="@dimen/commonn_tv_xxxxxxx"
+            android:textColor="@color/top_color"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3px"
+        android:layout_marginTop="@dimen/commonn_margin_pad_x"
+        android:background="@color/gray_btn_bg_color"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+         android:id="@+id/ll_one_hour"
+        android:layout_marginLeft="@dimen/commonn_margin_pad"
+        android:layout_marginRight="@dimen/commonn_margin_pad"
+        android:layout_marginTop="@dimen/commonn_margin_pad"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/time_circle_unsel"
+            android:layout_width="wrap_content"
+            android:text="1"
+            android:textSize="@dimen/commonn_tv_xxxx"
+            android:textColor="@color/top_color"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/commonn_margin_pad_x"
+            android:layout_width="wrap_content"
+            android:text="hours"
+
+            android:textSize="@dimen/commonn_tv_xxxxxxx"
+            android:textColor="@color/top_color"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3px"
+        android:layout_marginTop="@dimen/commonn_margin_pad_x"
+        android:background="@color/gray_btn_bg_color"
+        />
+
+</LinearLayout>

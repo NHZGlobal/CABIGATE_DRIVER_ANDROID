@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    card_view:cardCornerRadius="7dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/top_color"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/commonn_margin_pad_xx"
+            android:paddingTop="@dimen/commonn_margin_pad_xx"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tvPickUpLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Are you sure you want to?"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/commonn_tv_xx" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commonn_margin_pad"
+
+        android:orientation="vertical"
+
+
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/btnDelett"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/commonn_margin_pad_x"
+            android:background="@drawable/btn_gray"
+            android:text="Delete"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/commonn_margin_pad_x"
+            android:layout_weight="1"
+            android:background="@drawable/btn_gray"
+            android:text="Update"
+            android:textColor="@android:color/white" />
+            <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/commonn_margin_pad_x"
+            android:layout_weight="1"
+            android:background="@drawable/btn_gray"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
+    </LinearLayout>

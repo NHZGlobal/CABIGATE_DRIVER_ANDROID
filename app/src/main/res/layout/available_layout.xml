@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:background="@drawable/drawable_timer"
+        android:layout_centerInParent="true"
+        android:layout_height="130dp">
+
+        <TextView
+            android:id="@+id/tv_availabel_time"
+            android:layout_width="fill_parent"
+            android:text="12"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_centerInParent="true"
+            android:layout_height="fill_parent" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_alignParentBottom="true"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/screen_bg"
+                tools:context=".ui.activity.MainActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/containerLogo"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="@dimen/commonn_margin_pad_l_x"
+        android:layout_width="wrap_content"
+        android:src="@drawable/cabigate_logo"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:text="Signin"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/containerLogo"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/commonn_tv_xxxxxxx"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvVersionName"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/commonn_tv_x"
+        android:layout_height="wrap_content" />
+
+
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progressBar"
+        android:layout_marginTop="@dimen/commonn_margin_pad_xx"
+        android:visibility="invisible"
+        xmlns:wheel="http://schemas.android.com/apk/res-auto"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        wheel:matProg_barColor="@color/colorAccentProgress"
+        wheel:matProg_barWidth="2dp"
+        wheel:matProg_progressIndeterminate="true" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/commonn_margin_pad_xx"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/progressBar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="#10FFFFFF"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:id="@+id/edtCompanyName"
+                android:layout_marginLeft="@dimen/commonn_margin_pad_xxxxxxx"
+                android:layout_marginRight="@dimen/commonn_margin_pad_xxxxxxx"
+
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/user_ic_unsel"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/textcolor_hint"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/commonn_margin_pad_xx"
+                android:background="@drawable/signin_textfield_a"
+                android:hint="@string/company"
+                android:inputType="text"
+                android:drawablePadding="@dimen/commonn_margin_pad_x"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtusername"
+                android:layout_marginLeft="@dimen/commonn_margin_pad_xxxxxxx"
+                android:layout_marginRight="@dimen/commonn_margin_pad_xxxxxxx"
+                android:layout_marginTop="@dimen/commonn_margin_pad_x"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/user_ic_unsel"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/textcolor_hint"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/commonn_margin_pad_xx"
+                android:background="@drawable/signin_textfield_a"
+                android:hint="@string/username_email"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="@dimen/commonn_margin_pad_x"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_marginLeft="@dimen/commonn_margin_pad_xxxxxxx"
+                android:layout_marginRight="@dimen/commonn_margin_pad_xxxxxxx"
+                android:layout_marginTop="@dimen/commonn_margin_pad_x"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/lock_ic_unsel"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/textcolor_hint"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/commonn_margin_pad_xx"
+                android:background="@drawable/signin_textfield_a"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:drawablePadding="@dimen/commonn_margin_pad_x"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <ImageButton
+            xmlns:widget="http://schemas.android.com/apk/res-auto"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:id="@+id/loginBtn"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/commonn_margin_pad_xxxxxxx"
+            android:layout_marginRight="@dimen/commonn_margin_pad_xxxxxxx"
+            android:background="@null"
+            android:src="@drawable/btn_sigin"
+            android:textColor="@android:color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/sign_in"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:paddingTop="@dimen/commonn_margin_pad_s"
+    android:paddingBottom="@dimen/commonn_margin_pad_s"
+    android:paddingLeft="@dimen/commonn_margin_pad"
+    android:paddingRight="@dimen/commonn_margin_pad"
+    android:layout_height="match_parent">
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center"
+     android:elevation="@dimen/commonn_margin_pad"
+    card_view:cardCornerRadius="3dp">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/commonn_margin_pad_x"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/tvCarName"
+        android:layout_toRightOf="@id/ivCarStatus"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+
+        android:layout_marginLeft="@dimen/commonn_margin_pad_x"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/commonn_tv_xxxx"
+        android:text="Vichile name"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@+id/tvCarName"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_toLeftOf="@+id/checkboxNotification"
+        android:layout_marginLeft="@dimen/commonn_margin_pad_x"
+        android:layout_marginTop="@dimen/commonn_margin_pad"
+        android:layout_toRightOf="@+id/ivCarStatus"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvCarAdress"
+            android:drawableLeft="@drawable/small_location"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/ivCarStatus"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textSize="@dimen/commonn_tv_xxx"
+            android:text="Vichile name"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvCarNumber"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/ivCarStatus"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:drawablePadding="@dimen/commonn_margin_pad_x"
+            android:drawableLeft="@drawable/green_location_pin"
+            android:layout_marginLeft="@dimen/commonn_margin_pad"
+            android:textSize="@dimen/commonn_tv_xxx"
+            android:text="Vichile name"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <CheckBox
+
+        android:id="@+id/checkboxNotification"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/commonn_margin_pad"
+        android:background="@null"
+        android:button="@null"
+
+        android:drawableLeft="@drawable/checkbox_notifcation_green"
+
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>

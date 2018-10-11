@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobileapps.technroid.io.cabigate">
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="mobileapps.technroid.io.cabigate.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission android:name="mobileapps.technroid.io.cabigate.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".app.MyApplication"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/MyMaterialTheme.Base">
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MyMaterialTheme.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.LoginActivity"
+        android:theme="@style/MyMaterialTheme.Base"
+        android:screenOrientation="portrait"
+        />
+
+        <activity android:name=".ui.activity.MainActivity"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="mobileapps.technroid.io.cabigate.SEND_LOG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+
+        <activity android:name=".ui.activity.StartShiftActivity"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ui.activity.JobViewActivity"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDJCc3kaaKI1DvTlDD53Pd6jqHW0HDOHg8" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".api.ConnectionService"
+            />
+        <!--<service android:name=".api.ConnectSocketService" />-->
+        <!--<receiver android:name=".gpstrackmodule.SocketBroadCastReceiver"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED"></action>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <service android:name=".gpstrackmodule.GPSTracker"/>
+
+
+        <!--<receiver android:name=".gpstrackmodule.GpsTrackerBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>-->
+        <!-- Declaring broadcast receiver for BOOT_COMPLETED event. -->
+        <receiver android:name=".gpstrackmodule.BootCompletedReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".gpstrackmodule.GpsTrackerAlarmReceiver">
+        </receiver>
+        <service android:name=".api.LocationService">
+        </service>
+        <service
+            android:exported="false"
+            android:name=".api.MyService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name=".gpstrackmodule.MyBroadcastReceiver"
+        android:enabled="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+        </intent-filter>
+        </receiver>
+
+        <receiver android:name=".gpstrackmodule.ConnectivityReceiver">
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>
+
+
+        <!--<receiver android:name=".gpstrackmodule.NetworkStateReceiver">
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>-->
+
+        <receiver android:name=".localnotification.MyReceiver"/>
+    </application>
+
+</manifest>

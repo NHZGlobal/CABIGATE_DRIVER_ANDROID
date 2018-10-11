@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commonn_margin_pad"
+
+        android:background="@color/top_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/nav_way_point_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvNavWayPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/commonn_margin_pad"
+                android:layout_marginLeft="@dimen/commonn_margin_pad"
+                android:layout_marginTop="@dimen/commonn_margin_pad"
+                android:drawableTop="@drawable/map_marker"
+                android:gravity="center"
+                android:text="@string/nav"
+                android:visibility="invisible"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/commonn_margin_pad"
+                android:layout_marginLeft="@dimen/commonn_margin_pad"
+                android:layout_marginTop="@dimen/commonn_margin_pad"
+                android:background="@color/gray_btn_bg_color" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/nav_drop_off_container_select"
+            android:layout_toRightOf="@+id/nav_way_point_container"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvWayPointTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Way Point"
+                android:textColor="@color/white"
+                android:textSize="@dimen/commonn_tv" />
+
+
+            <TextView
+                android:id="@+id/tvWayPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/away_timer_done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/commonn_tv_xxxxxx" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/nav_drop_off_container_select"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/iv_tick1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/commonn_margin_pad"
+                android:layout_marginRight="@dimen/commonn_margin_pad"
+                android:layout_marginTop="@dimen/commonn_margin_pad"
+                android:background="@color/gray_btn_bg_color" />
+            <ImageView
+                android:id="@+id/iv_tick1"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/commonn_margin_pad"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/tick_circle"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

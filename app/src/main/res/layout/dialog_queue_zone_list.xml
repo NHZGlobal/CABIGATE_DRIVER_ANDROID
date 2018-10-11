@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        card_view:cardCornerRadius="7dp"
+        >
+
+    <RelativeLayout
+
+        android:layout_below="@+id/timeContainer"
+        android:layout_above="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+       android:layout_height="500dp">
+        <RelativeLayout
+            android:id="@+id/topTitleContainer"
+            android:background="@color/colorBtnDefault"
+            android:layout_width="match_parent"
+
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/selectyourzone"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/commonn_tv_xxxx"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:background="@color/white"
+            android:layout_below="@+id/topTitleContainer"
+            android:layout_above="@+id/selctedContainer"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/row_zone_new"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            android:layout_alignParentBottom="true"
+            android:id="@+id/selctedContainer"
+            android:layout_margin="@dimen/commonn_margin_pad_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvSelectedVeihlhle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:minWidth="120dp"
+                android:gravity="center"
+                android:text="Select This Zone"
+                android:layout_marginRight="@dimen/commonn_margin_pad"
+                android:textColor="@color/white"
+                android:background="@drawable/button_default"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/tvCancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/commonn_margin_pad"
+                android:minWidth="120dp"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:background="@drawable/button_default"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>
