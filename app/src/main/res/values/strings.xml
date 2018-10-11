@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CABIGATE</string>
     <string name="action_settings">Settings</string>
-
+<string name="testgit">Commit Data</string>
 
     <string name="error_field">"Field is missing</string>
     <string name="error_password">"Your password must have at least 8 characters, consists of only letters and digits and must contain atleast two digits</string>
